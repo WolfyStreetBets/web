@@ -1,0 +1,42 @@
+.overview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.overview .heading {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    width: 100%;
+    text-align: center;
+}
+.overview .heading h2 {
+    align-self: center;
+    margin-bottom: 2%;
+    margin-top: -1%;
+    width: 50%;
+}
+/**/
+.overview .overviewContainer {
+    width: 60%;
+    height: 75%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.overview .overviewContainer .overviewItem {
+    flex-basis: 50%;
+    align-self: flex-start;
+    text-align: center;
+    padding-bottom: 3%;
+}
+.overview .overviewContainer .overviewItem .overviewItemContent p {
+    margin: 0 auto;
+}
+.overview .overviewContainer .overviewItem .overviewItemContent img {
+    width: 25%;
+    height: auto;
+    padding: none;
+    margin-top: 2%;
+}

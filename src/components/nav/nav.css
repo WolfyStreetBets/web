@@ -1,0 +1,131 @@
+/*styles for top navbar*/
+
+.nav {
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Prompt', sans-serif;
+    justify-content: center;
+}
+.nav .navLogo {
+    width: 20vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding-right: 3%;
+    z-index: 1;
+}
+#logoText {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Prompt', sans-serif;
+}
+img {
+    width: 60px;
+    height: 60px;
+    padding-right: 5%;
+}
+.nav .navLinks {
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    z-index: 1;
+}
+.nava {
+    text-decoration: none;
+    color: #D9D9D9;
+    position: relative;
+    align-self: center;
+}
+.nava:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: #D9D9D9;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+}
+.nava:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+.nava:active {
+    font-weight: bold;
+    color: #00F168
+}
+.launchbtn {
+    padding: 12px 30px;
+    margin: 0 4%;
+    border: 3px solid white;
+    text-decoration: none;
+    position: relative;
+    top: 7%;
+    background: -webkit-linear-gradient(left, #00F168, #FAFF00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(#00F168,#FAFF00);
+}
+.launchbtn:hover {
+    background: white;
+    -webkit-background-clip: none;
+    background-clip: none;
+    -webkit-text-fill-color: black;
+}
+#submenu {
+    display: none;
+}
+/*screen sizes*/
+@media (max-width: 575.98px) {
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+@media screen and (max-width: 1440px) {
+    .nav {
+        flex-direction: column;
+        height: 50vh;
+        padding: 2%;
+    }
+    .nav .navLogo {
+        justify-content: center;
+        align-self: center;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+    }
+    .nav .navLinks {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav .navLinks a {
+        padding: 2%;
+    }
+    .launchbtn {
+        width: 30%;
+    }
+
+}

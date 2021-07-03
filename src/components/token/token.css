@@ -1,0 +1,59 @@
+.token {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 3%;
+}
+.token .heading {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    width: 100%;
+    text-align: center;
+}
+.token .tokenContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: auto;
+}
+.token .tokenContainer .tokenInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-start;
+    justify-content: space-evenly;
+    flex-basis: 50%;
+}
+.token .tokenContainer .wolfyTokenStats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-start;
+    flex-basis: 50%;
+}
+.token .tokenContainer .wolfyTokenStats .statsHeading {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    height: max-content;
+    width: max-content;
+}
+
+@media screen and (max-width: 991.98px) {
+    .token .tokenContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: auto;
+    }
+    .token .tokenContainer .wolfyTokenStats {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+        flex-basis: 50%;
+    }
+}

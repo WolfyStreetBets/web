@@ -1,0 +1,53 @@
+.security {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3%;
+}
+.security .heading {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+.security .securityContent {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.security .securityContent .secContentBox {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.security .securityContent .secContentBox img {
+    width: 20%;
+    height: auto;
+    padding: 5%;
+    align-self: center;
+}
+.security .securityContent .secContentBox p {
+    max-width: 40%;
+}
+#solFi {
+    padding: 3% !important;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .security .securityContent .secContentBox img {
+        width: 30%;
+        height: auto;
+        padding: 5%;
+        align-self: center;
+    }
+}
+@media (max-width: 800px) {
+    .security .securityContent .secContentBox img {
+        width: 50%;
+        height: auto;
+        padding: 5%;
+        align-self: center;
+    }
+}

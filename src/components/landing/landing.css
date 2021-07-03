@@ -1,0 +1,76 @@
+.landing {
+    width: 100vw;
+    height: 88vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.landing .landingContent {
+    width: 50%;
+    height: 60%;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+}
+.landing .landingContent .landingHeadline {
+    font-family: 'Prompt', sans-serif;
+    font-size: 3vw;
+    line-height: 1.1em;
+    color: white !important;
+}
+/*rules*/
+h2 {
+    color: #D9D9D9;
+    font-weight: 300;
+    max-width: 80%;
+}
+.mainBtn {
+    width: auto;
+    padding: 18px 40px;
+    border: 1px solid #D9D9D9;
+    border-radius: 18px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: 7%;
+}
+.mainBtn:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+.launchbtnBorder {
+    padding: 18px 40px;
+    margin: 0 4%;
+    text-decoration: none;
+    position: relative;
+    top: 7%;
+    background: -webkit-linear-gradient(left, #00F168, #FAFF00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(#00F168,#FAFF00);
+    text-align: center;
+}
+.launchbtnBorder:hover {
+    background: white;
+    -webkit-background-clip: none;
+    background-clip: none;
+    -webkit-text-fill-color: black;
+}
+a, p, h2 {
+    font-family: 'Questrial', sans-serif;
+}
+
+@media screen and (max-width: 850px) {
+    .landing .landingContent {
+        width: 70%;
+    }
+    .landing .landingContent .landingHeadline {
+        font-size: 6vw;
+    }
+}

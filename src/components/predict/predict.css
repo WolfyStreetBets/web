@@ -1,0 +1,180 @@
+.predict {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.predict h1 {
+    line-height: 0.4em;
+}
+.predict h2 {
+    min-width: 100%;
+}
+.predict .nav {
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Prompt', sans-serif;
+    justify-content: center;
+}
+.predict .nav .navLogo {
+    width: 20vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding-right: 3%;
+    z-index: 1;
+}
+.predict .nav .navLogo a {
+    white-space: nowrap;
+    width: 100%;
+}
+.predict .nav .navLinks {
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    z-index: 1;
+}
+.predict .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.predict .heading {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    height: 50%;
+}
+
+.predict .chains {
+    width: 60%;
+    height: auto;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+}
+.predict .chains img {
+    width: 6%;
+    height: auto;
+    margin: 0 auto;
+    align-self: center;
+    padding: 1%;
+}
+.predict .chains .selectChain {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    margin: 3%;
+    border: 2px solid white;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right,#00F168,#FAFF00);
+    border-radius: 140px;
+}
+.predict .chains .selectChain .chainHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.predict .chains .selectChain .chainHeader h2 {
+    align-self: center;
+}
+.predict .chains .selectChain .chainDetails {
+    display: flex;
+    flex-direction: row;
+}
+.predict .chains .selectChain .chainDetails .chainDetailsContent {
+    flex-basis: 50%;
+    text-align: center;
+    align-items: flex-start;
+}
+.predict .chains .selectChain .chainDetails .chainDetailsContent .contentAssets {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.predict .chains .selectChain .chainDetails .chainDetailsContent .contentAssets ul li {
+    border: none !important;
+}
+.predict .chains .selectChain .chainDetails .chainDetailsContent .contentAssets .assets {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+.predict .chains .selectChain .chainDetails .chainDetailsContent .contentAssets .assets img {
+    min-width: 10%;
+    height: auto;
+    padding: 2%;
+    align-items: center;
+    margin: 0;
+}
+#predictionList {
+    padding: 1%;
+    border: none !important;
+    list-style-type: none;
+    line-height: 0.9em;
+}
+#predictionListItem {
+   align-self: center; 
+}
+.predict footer {
+    min-width: 85%;
+    max-height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+
+@media screen and (max-width: 1210px) {
+    .predict .chains {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .predict .nav {
+        flex-direction: column;
+        height: 50vh;
+        padding: 2%;
+    }
+    .predict .nav .navLogo {
+        justify-content: center;
+        align-self: center;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+    }
+    .predict .nav .navLinks {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .predict .nav .navLinks a {
+        padding: 2%;
+    }
+
+}
+@media screen and (max-width: 1210px) {
+    h2 {
+        font-size: 3vw;
+    }
+}
